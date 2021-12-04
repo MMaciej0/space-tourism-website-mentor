@@ -19,8 +19,10 @@
     />
     <!-- custom css -->
     <link rel="stylesheet" href="index.css" />
-    <!-- script -->
+    <!-- script - navbar -->
     <script src="./index.js" defer></script>
+    <!-- script destination page -->
+    <script src="./destination.js"></script>
 
     <title>Frontend Mentor | Space tourism website</title>
   </head>
@@ -78,10 +80,55 @@
         </ul>
       </nav>
     </header>
-    <main class="grid-container--xxx grid-container--home">
+    <main class="grid-container grid-container--destination flow">
       <h1 class="numbered-title">
         <span aria-hidden="true">01</span> Pick your destination
       </h1>
+
+      <img src="./assets/destination/image-moon.png" alt="" />
+
+      <div class="tab-list underline-indicators flex">
+        <button
+          aria-selected="true"
+          class="uppercase ff-sans-cond text-light bg-dark letter-spacing-2"
+        >
+          Moon
+        </button>
+        <button
+          aria-selected="false"
+          class="uppercase ff-sans-cond text-light bg-dark letter-spacing-2"
+        >
+          Mars
+        </button>
+        <button
+          aria-selected="false"
+          class="uppercase ff-sans-cond text-light bg-dark letter-spacing-2"
+        >
+          Europa
+        </button>
+      </div>
+
+      <section class="destination-info">
+        <h2 class="fs-800 ff-serif uppercase letter-spacing-1">Moon</h2>
+        <p class="text-light">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nobis
+          consectetur inventore aut quam quia eos, itaque soluta quis iure illum
+          earum nemo veniam a. Omnis ea temporibus cum aperiam sunt ut at sint
+          accusamus odio praesentium deserunt eaque quisquam obcaecati, dolore
+          sequi perferendis, ipsum molestiae. Sint deleniti reiciendis error!
+        </p>
+
+        <div class="destination-meta flex">
+          <div>
+            <h3 class="uppercase text-light fs-200">Avg. distance</h3>
+            <p class="ff-serif uppercase">384,400 km</p>
+          </div>
+          <div>
+            <h3 class="uppercase text-light fs-200">Est. travel time</h3>
+            <p class="ff-serif uppercase">3 days</p>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
