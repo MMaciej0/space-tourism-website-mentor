@@ -112,6 +112,10 @@ a {
   display: block;
 }
 
+.none {
+  display: none;
+}
+
 .flow > *:not(:first-child) {
   margin-top: var(--flow-space, 1rem);
 }
