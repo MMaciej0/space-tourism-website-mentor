@@ -1,5 +1,3 @@
-// tabs handler
-
 const tabs = document.querySelectorAll(".tab-list > button");
 const tabList = document.querySelector(".tab-list");
 
@@ -12,6 +10,15 @@ const dotsList = document.querySelector(".dot-indicators");
 
 dots.forEach((dot) => {
   dot.addEventListener("click", changeTabPanel);
+});
+
+const numberedDots = document.querySelectorAll(
+  ".dot-number-indicators > button"
+);
+const numberedDotsList = document.querySelector(".dot-number-indicators");
+
+numberedDots.forEach((numberedDot) => {
+  numberedDot.addEventListener("click", changeTabPanel);
 });
 
 function changeTabPanel(e) {
